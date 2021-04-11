@@ -1,0 +1,253 @@
+#__nuxt {
+    background: #FFFFFF;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1em;
+    min-height: 100vh;
+}
+
+#__layout {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.title {
+    font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    display: block;
+    font-weight: 300;
+    font-size: 100px;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    font-weight: 300;
+    font-size: 42px;
+    color: #526488;
+    word-spacing: 5px;
+    padding-bottom: 15px;
+}
+
+.links {
+    padding-top: 2em;
+}
+
+.button--sacos_yellow {
+    color: #e3b602;
+    border: 1px solid #e3b602;
+    border-radius: 30px;
+    padding: 0.75em;
+    text-decoration: none;
+}
+
+.button--sacos_yellow:hover {
+    background: #e3b602;
+    color: #00000F;
+    border: 1px solid #e3b602;
+    border-radius: 30px;
+    padding: 0.75em;
+}
+
+.footer {
+    color: #fff !important;
+    background-color: #000 !important;
+    padding: 0.5em;
+}
+
+a {
+    color: #e3b602;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #e3b602;
+}
+
+a:hover {
+    background: #e3b602;
+    color: #000;
+}
+
+.three-quater-width {
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.list-no-bullets {
+    list-style: none !important;
+}
+
+.navbar {
+    background-color: #000;
+}
+
+.navbar-dropdown {
+    background-color: #000;
+}
+
+.navbar-item.has-dropdown:hover .navbar-link, a.navbar-item:hover {
+    background-color: #000 !important;
+    color: #e3b602;
+}
+
+.home-logo {
+    background: #e3b602;
+}
+
+.container {
+    padding-top: 2.5em;
+    padding-bottom: 5em;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+}
+
+/* accordion  */
+
+.accordion input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.accordion {
+    width: 15em;
+    display: block;
+    padding-top: 1em;
+}
+
+.accordion .col {
+    flex: 1;
+}
+
+.accordion .col:last-child {
+    margin-left: 1em;
+}
+
+/* Accordion styles */
+
+.accordion .tabs {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+}
+
+.accordion .tab {
+    width: 100%;
+    color: white;
+    overflow: hidden;
+}
+
+.accordion .tab-label {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background: #000000;
+    font-weight: bold;
+    cursor: pointer;
+    /* Icon */
+}
+
+.accordion .tab-label:hover {
+    background: #000000;
+}
+
+.accordion .tab-label::after {
+    content: "\276F";
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    transition: all 0.35s;
+}
+
+.accordion .tab-content {
+    max-height: 0;
+    padding: 0 1em;
+    color: #2c3e50;
+    background: white;
+    transition: all 0.35s;
+}
+
+.accordion .tab-close {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+    font-size: 0.75em;
+    background: #2c3e50;
+    cursor: pointer;
+}
+
+.accordion .tab-close:hover {
+    background: #000000;
+}
+
+.accordion input:checked+.tab-label {
+    background: #000000;
+}
+
+.accordion input:checked+.tab-label::after {
+    transform: rotate(90deg);
+}
+
+.accordion input:checked~.tab-content {
+    max-height: 100vh;
+    padding: 1em;
+    width: 14em;
+    display: block;
+    white-space: normal;
+}
+
+.accordion input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.accordion .col {
+    flex: 1;
+}
+
+.accordion .col:last-child {
+    margin-left: 1em;
+}
+
+#banner-slider .vueperslide {
+    background-color:#e3b602;
+}
+
+#riders .gallery-list .image {
+    padding:0.5em;
+}
+
+#riders .gallery-list .image img {
+    max-height: 300px;
+    width: auto;
+}
+
+#riders .gallery-list span {
+    list-style: none;
+    min-width: 300px;
+}
+
+#riders .gallery-list .image img {
+    max-height: 300px;
+    width: auto;
+    margin: 0 auto;
+}
+
+#riders .gallery-list .rider-container {
+    float: left;
+}
+
+#rider-hero-image img {
+    width: auto;
+    margin: 0 auto;
+}

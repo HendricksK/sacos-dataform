@@ -1,0 +1,189 @@
+/* overriding bulma CSS */
+
+.navbar {
+    padding-left: 0.5em;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 2em;
+}
+
+#about, #home, #riders {
+    text-align: center;
+}
+
+.image img {
+    width: auto !important;
+    margin: 0 auto;
+}
+
+.notification.is-info {
+    background-color: #e3b602;
+}
+
+#home .notification {
+    padding: 1.25rem 1.5rem 1.25rem 1.5rem;
+}
+
+#home .notification .image img {
+    max-height: 250px;
+    width: auto;
+    margin: auto;
+}
+
+#home .notification p {
+    padding-top: 1em;
+    font-size: 1em;
+}
+
+.article-display {
+	white-space: break-spaces;
+}
+
+.rider-slider .slick-slide {
+    background: #e3b602;
+    text-align: center;
+    height: auto;
+}
+
+.rider-slider .slick-slide img {
+    max-height: 200px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.rider-slider .slick-slide .slide-data {
+    margin: 0 auto;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+
+.rider-slider .slick-slide .slide-data .content.show-more {
+    overflow: hidden;
+    height: 2em;
+    line-height: 1.75em;
+    margin: auto;
+    font-size: 0.75em;
+}
+
+.rider-slider .slick-slide .slide-data .content.show-more.open {
+    height: auto;
+    min-height: 12em;
+}
+
+.rider-slider .slick-slide .slide-data .content.show-more.closed {
+    height: 2em;
+}
+
+.rider-slider .slick-slide .show-more-button {
+    float: right;
+    top: 16.5em;
+    position: absolute;
+    height: 40px;
+    display: block;    
+}
+
+.rider-slider .slick-slide .show-more-button:hover { 
+    cursor: pointer;
+}
+
+
+.rider-slider .slick-slide .show-more-button::after {
+    content: '';
+    font-size: 0.75em;
+    width: 10px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #fff;
+}
+
+.slick-initialized .slick-slide {
+    margin: 0 0.75em 0 0.75em;
+    border-radius: 1%;    
+}
+
+.rider-slider .slick-dots li.slick-active button {
+    background: #000;
+    border-radius: 10%;
+    width: 40px;
+    height: 5px;
+}
+
+.rider-slider .slick-dots li button {
+    background: #fff;
+    border-radius: 10%;
+    width: 40px;
+    height: 5px;
+    border: 1px solid #000;
+    padding: 0;
+    border-radius: 10%;
+    padding: 0 1em 0 1em;
+}
+
+.rider-slider .slick-dots li button::before {
+    display: none !important;
+}
+
+.slick-dots li {
+    width: 40px !important;
+}
+
+.slick-dots {
+    bottom: -35px;
+}
+
+.slick-prev::before, .slick-next::before {
+    color: #000 !important;
+}
+
+.pageloader {
+    background: #e3b602;
+}
+
+.pageloader .title {
+    color: #000;
+}
+
+.pageloader:after {
+    border-color: rgb(0, 0, 0);
+}
+
+#home .description {
+    text-align: center;
+}
+
+
+#riders .gallery-list .image img {
+    max-width: 300px;
+    width: auto;
+    margin: 0 auto;
+}
+
+#riders .gallery-list .rider-container {
+    float: left;
+    margin: 0 auto;
+    width: auto;
+}
+
+#article #articles-list {
+    text-align: center;
+}
+
+#article #article-text { 
+    white-space: pre-wrap; 
+}
+
+@media screen and (max-width: 400px) {
+    .slick-dots {
+        bottom: -50px;
+    }
+
+    .title { 
+        font-size: 50px;
+    }
+
+}
+
+
