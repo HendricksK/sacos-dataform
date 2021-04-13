@@ -18,7 +18,6 @@ function init(callback) {
     xhr.onreadystatechange = (e) => {
     	if (xhr.readyState === 4) {
             const token = JSON.parse(xhr.responseText)
-            console.log(token)
 
             octokit = new Octokit({
 			  auth: token.token
@@ -36,8 +35,6 @@ function upload(octokit) {
 	  repo: 'sacos_images',
 	  path: 'uploads/dataform'
 	})
-
-	console.log(repocontents)
 
 	// Getting 404 error here because of auth.
 	try {
