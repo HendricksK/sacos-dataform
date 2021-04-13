@@ -19,6 +19,8 @@ function init(callback) {
     	if (xhr.readyState === 4) {
             const token = JSON.parse(xhr.responseText)
 
+            // https://www.devglan.com/online-tools/bcrypt-hash-generator
+
             octokit = new Octokit({
 			  auth: token.token
 			});
